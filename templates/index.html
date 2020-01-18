@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="row">
+		<div class= "col-sm-3 text-right heading">
+			<p>Who?</p>
+		</div>
+		<div class = "col-sm-6 text-left pads">
+			<p> Hi, I'm Bailey Johnson. I'm a student at <a target="_blank" href="https://www.coastal.edu/">Coastal Carolina University</a> working towards a bachelor's degree in computer science. I'm also a Malware Analyst and Python Developer at <a target="_blank" href="https://www.wetstonetech.com/">WetStone Technologies</a>.</p>
+		</div>
+	</div>
+	<div class="row" id="photo">
+		<div class = "col-sm-12 text-center pads">
+			<img src="{{url_for('static', filename='headshot.png')}}" class="img-circle" id="headshot" alt="" width="180" height="180">
+		</div>
+	</div>
+	<div class="row">
+		<div class = "col-sm-12 text-center pads">
+			<p>
+				<a target="_blank" href="https://github.com/baileywjohnson" style="text-decoration:none"><img src="{{url_for('static', filename='mark.png')}}" height="40" width="40">
+				</a>&emsp;
+				<a target="_blank" href="https://www.linkedin.com/in/baileywjohnson" style="text-decoration:none"><img src="{{url_for('static', filename='linkedin.png')}}" height="40" width="40"></a>&emsp;
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class= "col-sm-3 text-right heading">
+			<p>Why?</p>
+		</div>
+		<div class = "col-sm-6 text-left pads">
+			<p> I've created this webpage to compliment my resume, as somewhere I can showcase my personal projects and share content. Most of my recent work has been on the backend so this also gives me a chance to flex my frontend skills (though I do prefer a minimalistic design).</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class= "col-sm-3 text-right heading">
+			<p>How?</p>
+		</div>
+		<div class = "col-sm-6 text-left pads">
+			<p> This is being hosted on a <a target="_blank" href="https://www.digitalocean.com/products/droplets/">DigitalOcean</a> server/droplet out of NYC ($5 monthly, 1GB/25GB Disk with 1 vCPU) running Ubuntu 18.04.  I'm using <a target="_blank" href="https://www.palletsprojects.com/p/flask/">Flask</a>. I also use DigitalOcean to self-host <a target="_blank" href="https://bitwarden.com/">Bitwarden</a> as my password manager and <a target="_blank" href="https://nextcloud.com/">Nextcloud</a> for syncing my contacts, calanders and notes with <a target="_blank" href="https://joplinapp.org/">Joplin</a>.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 text-center pads">
+			<div class="resume-button">
+				<a target="_blank" href="{{url_for('static', filename='resume.pdf')}}"><button class="btn btn-default" id="resume-button"> Resume </button></a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

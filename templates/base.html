@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	
+		<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}"/>
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+		<link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}">
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title> {{ title }} </title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="body-main">
+				<div class="row">
+					<h1 id="title">Bailey Johnson</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center pads">
+						<a href="/"><button class="btn btn-default"> Home </button></a>
+						<a href="/projects"><button class="btn btn-default"> Projects </button></a>
+						<a href="/other"><button class="btn btn-default"> Other </button></a>
+					</div>
+				</div>
+				<div class="fade-load">
+					{% block content %}{% endblock %}
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<span class="text-muted">
+						<div id='copyright'>© Bailey Johnson 2017-{{ year }}</div>
+						<div>
+							<a target="_blank" href="mailto:baileywjohnson@gmail.com">baileywjohnson@gmail.com</a> | <a target="_blank" href="mailto:bwjohns2@coastal.edu">bwjohns2@coastal.edu</a><br/>843-685-0337
+						</div>
+					</span>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
