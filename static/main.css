@@ -40,7 +40,7 @@
 }
 
 .resume-button{
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .body-main{
@@ -60,6 +60,10 @@
   -moz-border-radius: 500px;
   background-clip: content-box;
   padding: .50em;
+}
+
+#projects-btext{
+  padding-top: 10px;
 }
 
 .box {
