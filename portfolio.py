@@ -21,7 +21,7 @@ def other():
 
 @app.route("/twitterminer")
 def twitterminer():
-    return "Coming Soon"
+    return "Coming Soon!"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
